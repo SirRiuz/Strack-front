@@ -1,0 +1,207 @@
+.product-card{
+  position: relative;
+  background-color: green;
+  height: 304px;
+  width: 100%;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* border-radius: 2px; */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, .2);
+  border-radius: 5px;
+}
+
+.product-card-shadow{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  /* border-radius: 2px; */
+  opacity: .4;
+  background-image: linear-gradient(
+      180deg, transparent 0%,yellow 90%,yellow 0% );
+}
+
+.product-card-footer{
+  height: 50px;
+  background-color: yellow;
+  /* border-radius: 2px; */
+}
+
+.product-card-header{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("");
+  background-color: #E1E1E1;
+  background-size: contain;
+  background-position: center;
+  /* border-radius: 2px; */
+  background-repeat: no-repeat;
+}
+
+
+.f-large{
+  width: 20px;
+  height: 100%;
+}
+
+.large {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row-reverse;
+}
+
+.s-large{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  opacity: .4;
+  background-image: linear-gradient(
+      -90deg, transparent 0%,yellow 90%,yellow 0% );
+}
+
+.h-large {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("");
+  background-color: #E1E1E1;
+  background-size: auto;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+
+.product-content{
+  background-color: yellow;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height: 110px;
+  z-index: 10;
+  bottom: 0;
+  justify-content: center;
+  gap: 7px;
+}
+
+.product-prodiver{
+  display: flex;
+  gap: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: green;
+}
+
+.product-prodiver-icon{
+  background: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  background-image: url("https://www.olx.com.co/favicon.ico");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.product-info{
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: green;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.product-info-name {
+  font-weight: 600;
+  line-height: 22px;
+  white-space: pre-wrap;
+}
+
+.product-pracing{
+  display: flex;
+  gap: 10px;
+  font-weight: 600;
+}
+
+
+.i-large {
+  background-color: yellow;
+  width: 230px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  gap: 15px;
+}
+
+
+.n-large {
+  font-weight: 600;
+  line-height: 22px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  white-space: pre-wrap;
+}
+
+
+.product-pracing-original{
+  text-decoration: line-through;
+  font-weight: 450;
+  font-size: 14px;
+  opacity: .6;
+}
+
+.product-pracing-actual{
+  font-weight: 465;
+  font-size: 14px;
+}
+
+
+.product-prov-origin {
+  font-weight: 400;
+  font-size: 14px;
+  color: #111111;
+}
+
+.product-score{
+  position: absolute;
+  padding-top: 10px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 25px;
+}
+
+.ps-large {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.score-incator{
+  width: 65px;
+  height: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background-color: green;
+}

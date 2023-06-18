@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+
+@font-face {
+  font-family: 'GT Walsheim';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../src/assets/fonts/GT-Walsheim-Regular-subset.woff2') format('woff2');
+}

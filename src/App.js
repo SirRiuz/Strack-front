@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { useBottomScrollListener } from 'react-bottom-scroll-listener';
+import Feed from "./components/feed/Feed";
+import ShareProduct from "./components/cards/ShareProducs";
+import Skeleton from "./components/feed/Skeleton";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  const [selectedId, setSelectedId] = useState(null)
+  const scrollRef = useBottomScrollListener(() => {
+    //alert("Hello word")
+  }, {offset:0});
+
+  return(
+    <div onScroll={scrollRef}>
+      <Feed
+        element={(e) => {setSelectedId(() => e)}}
+      />
+      <ShareProduct
+        elementId={selectedId}
+        onClose={() => {
+          setSelectedId(null)
+        }}
+      />
     </div>
-  );
+  )
 }
 
 export default App;
